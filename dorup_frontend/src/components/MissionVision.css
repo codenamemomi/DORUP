@@ -1,0 +1,63 @@
+/* src/components/MissionVision.css */
+.mission-vision {
+  padding: 80px 20px;
+  background: white;
+}
+
+.mv-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.mv-card {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 25px;
+  text-align: center;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.1);
+  border: 1px solid #f1f5f9;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.mv-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: var(--accent-color);
+}
+
+.mv-icon {
+  margin-bottom: 1.5rem;
+}
+
+.mv-card h3 {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.mv-card p {
+  color: #64748b;
+  line-height: 1.7;
+  font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+  .mv-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .mv-card {
+    padding: 2rem 1.5rem;
+  }
+}

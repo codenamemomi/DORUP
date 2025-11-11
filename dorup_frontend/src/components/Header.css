@@ -1,0 +1,114 @@
+/* src/components/Header.css */
+.header {
+  background-color: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease;
+}
+
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo h2 {
+  color: #1e40af;
+  margin: 0;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.logo a {
+  text-decoration: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #374151;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+.nav-link:hover {
+  color: #1e40af;
+  background-color: #f1f5f9;
+}
+
+.nav-link.active {
+  color: #1e40af;
+  background-color: #dbeafe;
+}
+
+.auth-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 0.9rem;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #1e40af;
+  color: #1e40af;
+}
+
+.btn-outline:hover {
+  background-color: #1e40af;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-primary {
+  background-color: #d97706;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #b45309;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(217, 119, 6, 0.3);
+}
+
+@media (max-width: 768px) {
+  .nav {
+    gap: 1rem;
+  }
+  
+  .nav-link span {
+    display: none;
+  }
+  
+  .btn span {
+    display: none;
+  }
+}
