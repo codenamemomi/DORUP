@@ -10,7 +10,7 @@ const Features = () => {
   const features = [
     {
       icon: <Home size={32} />,
-      title: 'Verified Home Rentals',
+      title: '',
       description: 'Access verified and quality home rentals with enhanced security features, insurance policies, and legal support.',
       details: [
         '100% verified properties',
@@ -22,7 +22,7 @@ const Features = () => {
     },
     {
       icon: <Hotel size={32} />,
-      title: 'Standardized Hotel Bookings',
+      title: '',
       description: 'Nationwide access to standard and luxurious hotels with integrated GPS navigation and easy bookings.',
       details: [
         'Nationwide hotel network',
@@ -34,7 +34,7 @@ const Features = () => {
     },
     {
       icon: <Zap size={32} />,
-      title: 'Unified Utility Bill Payments',
+      title: '',
       description: 'All your utility bill payments in one app - efficient, reliable, and seamless.',
       details: [
         'Single platform for all bills',

@@ -147,8 +147,26 @@
 }
 
 @media (max-width: 768px) {
+  .features {
+    padding: 60px 20px;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+  }
+  
   .feature-tabs {
-    flex-direction: column;
+    flex-direction: row;
+    padding: 1rem;
+  }
+  
+  .feature-tab {
+    padding: 1.25rem 1rem;
   }
   
   .feature-content {
@@ -157,7 +175,67 @@
     gap: 2rem;
   }
   
+  .feature-main h3 {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .feature-details li {
+    font-size: 0.9rem;
+  }
+  
+  .visual-placeholder {
+    width: 150px;
+    height: 150px;
+    font-size: 2.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .features {
+    padding: 40px 16px;
+  }
+  
   .section-title {
+    font-size: 1.8rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .feature-content {
+    padding: 1.5rem;
+    gap: 1.5rem;
+  }
+  
+  .feature-tab {
+    padding: 1rem 0.75rem;
+  }
+  
+  .tab-icon {
+    font-size: 1.5rem;
+  }
+  
+  .tab-title {
+    font-size: 0.8rem;
+  }
+  
+  .feature-main h3 {
+    font-size: 1.3rem;
+  }
+  
+  .feature-main p {
+    font-size: 0.9rem;
+  }
+  
+  .visual-placeholder {
+    width: 120px;
+    height: 120px;
     font-size: 2rem;
+  }
+  
+  .visual-placeholder p {
+    font-size: 0.8rem;
   }
 }

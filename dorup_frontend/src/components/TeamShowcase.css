@@ -184,13 +184,22 @@
   font-size: 0.9rem;
 }
 
+/* Mobile improvements */
 @media (max-width: 768px) {
+  .team-showcase {
+    padding: 60px 20px;
+  }
+  
   .team-header h2 {
     font-size: 2.5rem;
   }
   
+  .team-subtitle {
+    font-size: 1.1rem;
+  }
+  
   .team-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
   }
   
@@ -199,7 +208,7 @@
   }
   
   .team-stats {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
   
@@ -209,8 +218,25 @@
 }
 
 @media (max-width: 480px) {
+  .team-showcase {
+    padding: 40px 16px;
+  }
+  
+  .team-header h2 {
+    font-size: 2rem;
+  }
+  
+  .team-subtitle {
+    font-size: 1rem;
+  }
+  
   .team-grid {
     grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .team-card {
+    padding: 1.25rem;
   }
   
   .member-avatar {
@@ -220,5 +246,40 @@
   
   .avatar-initials {
     font-size: 1.2rem;
+  }
+  
+  .team-stats {
+    grid-template-columns: 1fr;
+  }
+  
+  .stat-item {
+    padding: 0.75rem;
+  }
+  
+  .stat-content h4 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Small mobile devices */
+@media (max-width: 360px) {
+  .team-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .team-card {
+    padding: 1rem;
+  }
+  
+  .member-info h3 {
+    font-size: 1.1rem;
+  }
+  
+  .member-role {
+    font-size: 0.8rem;
+  }
+  
+  .member-description {
+    font-size: 0.8rem;
   }
 }

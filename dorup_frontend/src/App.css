@@ -12,6 +12,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   line-height: 1.6;
   color: #1e293b;
+  overflow-x: hidden;
 }
 
 .container {
@@ -23,4 +24,25 @@ body {
 /* Add padding to account for fixed header */
 .App {
   padding-top: 80px;
+}
+
+/* Improved responsive container */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+  
+  .App {
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 12px;
+  }
+  
+  .App {
+    padding-top: 60px;
+  }
 }

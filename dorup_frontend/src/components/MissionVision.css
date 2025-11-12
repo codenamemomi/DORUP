@@ -51,7 +51,12 @@
   font-size: 1rem;
 }
 
+/* Mobile improvements */
 @media (max-width: 768px) {
+  .mission-vision {
+    padding: 60px 20px;
+  }
+  
   .mv-grid {
     grid-template-columns: 1fr;
     gap: 2rem;
@@ -59,5 +64,27 @@
   
   .mv-card {
     padding: 2rem 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .mission-vision {
+    padding: 40px 16px;
+  }
+  
+  .mv-card {
+    padding: 1.5rem 1.25rem;
+  }
+  
+  .mv-icon {
+    margin-bottom: 1rem;
+  }
+  
+  .mv-card h3 {
+    font-size: 1.3rem;
+  }
+  
+  .mv-card p {
+    font-size: 0.9rem;
   }
 }

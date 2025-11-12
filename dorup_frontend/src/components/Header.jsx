@@ -1,24 +1,36 @@
 // src/components/Header.jsx
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Home, Users, LogIn, UserPlus } from 'lucide-react';
+import { Home, Users, LogIn, UserPlus, Menu, X } from 'lucide-react';
 import './Header.css';
 
 const Header = () => {
   const location = useLocation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
 
   return (
     <header className="header">
       <div className="container">
         <div className="logo">
-          <Link to="/">
+          <Link to="/" onClick={closeMenu}>
             <h2>Dorup</h2>
           </Link>
         </div>
-        <nav className="nav">
+        
+        {/* Desktop Navigation */}
+        <nav className={`nav ${isMenuOpen ? 'nav-open' : ''}`}>
           <Link 
             to="/" 
             className={`nav-link ${location.pathname === '/' ? 'active' : ''}`}
+            onClick={closeMenu}
           >
             <Home size={18} />
             <span>Home</span>
@@ -26,6 +38,7 @@ const Header = () => {
           <Link 
             to="/about" 
             className={`nav-link ${location.pathname === '/about' ? 'active' : ''}`}
+            onClick={closeMenu}
           >
             <Users size={18} />
             <span>About Us</span>
@@ -41,6 +54,20 @@ const Header = () => {
             </button>
           </div>
         </nav>
+
+        {/* Mobile Menu Button */}
+        <button 
+          className="menu-toggle"
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
+        </button>
+
+        {/* Mobile Menu Overlay */}
+        {isMenuOpen && (
+          <div className="mobile-overlay" onClick={closeMenu} />
+        )}
       </div>
     </header>
   );
