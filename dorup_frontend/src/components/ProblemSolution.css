@@ -133,7 +133,7 @@
 @media (max-width: 968px) {
   .problem-solution-pair {
     grid-template-columns: 1fr;
-    gap: 1.5rem;
+    gap: 2.5rem;
   }
   
   .problem-card,

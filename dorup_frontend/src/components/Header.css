@@ -20,15 +20,20 @@
   position: relative;
 }
 
-.logo h2 {
-  color: #1e40af;
-  margin: 0;
-  font-size: 1.8rem;
-  font-weight: 700;
+.logo {
+  display: flex;
+  align-items: center;
 }
 
-.logo a {
-  text-decoration: none;
+.logo img {
+  height: 90px;
+  width: auto;
+  object-fit: contain;
+  transition: transform 0.3s ease;
+}
+
+.logo img:hover {
+  transform: scale(1.05);
 }
 
 /* Desktop Navigation */
@@ -135,8 +140,8 @@
     padding: 0.75rem 1rem;
   }
 
-  .logo h2 {
-    font-size: 1.5rem;
+  .logo img {
+    height: 72px;
   }
 
   /* Hide desktop nav on mobile */
@@ -207,8 +212,8 @@
     padding: 0.5rem 1rem;
   }
 
-  .logo h2 {
-    font-size: 1.3rem;
+  .logo img {
+    height: 58px;
   }
 
   .nav {

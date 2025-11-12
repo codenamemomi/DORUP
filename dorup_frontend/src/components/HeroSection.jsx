@@ -12,21 +12,21 @@ const HeroSection = () => {
       icon: <Home size={24} />,
       text: 'Verified Home Rentals',
       description: '100% verified properties with legal support',
-      color: '#1e40af',
+      color: '#041b68ff',
       bgColor: 'rgba(30, 64, 175, 0.2)'
     },
     {
       icon: <Hotel size={24} />,
       text: 'Luxury Hotel Bookings',
       description: 'Nationwide access to standard & luxury hotels',
-      color: '#d97706',
+      color: '#ff8800ff',
       bgColor: 'rgba(217, 119, 6, 0.2)'
     },
     {
       icon: <Zap size={24} />,
       text: 'Unified Bill Payments',
       description: 'All utility bills in one secure platform',
-      color: '#059669',
+      color: '#00f76fff',
       bgColor: 'rgba(5, 150, 105, 0.2)'
     }
   ];

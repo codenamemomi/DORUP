@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container">
         <div className="logo">
           <Link to="/" onClick={closeMenu}>
-            <h2>Dorup</h2>
+            <img src="/dorup.png" alt="Dorup Logo" />
           </Link>
         </div>
         
